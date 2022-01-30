@@ -1,0 +1,4 @@
+this is a testfile for ex04 of CPP Module 01
+we are asked to replace s1 (= argv[2])
+with s2 (= argv[3]) in filename
+and write this to filename.replace
