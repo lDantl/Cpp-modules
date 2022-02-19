@@ -17,10 +17,10 @@ Point &Point::operator=(Point const &src)
 
 Fixed Point::get_x() const
 {
-    return (x);
+    return (this->x);
 }
 
 Fixed Point::get_y() const
 {
-    return (y);
+    return (this->y);
 }
