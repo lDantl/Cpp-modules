@@ -1,6 +1,6 @@
 NAME			=	clapTrap
 
-CC				=	clang++
+CC				=	с++
 CFLAGS			=	-Wall -Wextra -Werror
 CDEBUG			=	-fsanitize=adress -g -std=c++98
 

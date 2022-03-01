@@ -1,6 +1,6 @@
 NAME			=	fight
 
-CC				=	clang++
+CC				=	c++
 CFLAGS			=	-Wall -Wextra -Werror
 CDEBUG			=	-fsanitize=adress -g -std=c++98
 
