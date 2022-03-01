@@ -10,6 +10,7 @@ class Karen
 		void info( void );
 		void warning( void );
 		void error( void );
+		void notFound( void );
 	
 	public:
 		void complain(std::string level);
