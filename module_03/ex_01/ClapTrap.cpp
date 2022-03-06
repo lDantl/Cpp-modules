@@ -1,14 +1,5 @@
 #include "ClapTrap.hpp"
 
-// ClapTrap::ClapTrap()
-// {
-// 	 std::cout << "ClapTrap <" << "Unknown" << "> was created!!" << std::endl;
-//     name = "Unknown";
-//     health = 10;
-//     energyPoints = 10;
-//     attackDamage = 0;
-// }
-
 ClapTrap::ClapTrap(std::string name)
 {
 	this->name = name;
@@ -61,7 +52,6 @@ void	ClapTrap::takeDamage(unsigned int ammount)
 		this->health = 0;
 		std::cout << "ClapTrap |" << this->name << "| take " << ammount << " points of damage!" << '\n';
 		std::cout << "ClapTrap |" << this->name << "| is dead!!" << '\n';
-		exit(0);
 	}
 		else
 	{
@@ -70,7 +60,6 @@ void	ClapTrap::takeDamage(unsigned int ammount)
 		if (this->health == 0)
 		{
 			std::cout << "ClapTrap |" << this->name << "| is dead!!" << '\n';
-			exit(0);
 		}
 	}
 }
