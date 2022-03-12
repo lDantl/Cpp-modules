@@ -12,7 +12,7 @@ class HumanB
 	
 	private:
 		std::string 	name_hB;
-		Weapon			*_weapon;
+		Weapon			&_weapon;
 };
 
 #endif

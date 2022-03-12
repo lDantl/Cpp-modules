@@ -14,10 +14,10 @@ class ScavTrap : public ClapTrap
 
 		std::string getName();
 
-	void	guardGate();
-	void	attack(std::string const &target);
+		void	guardGate();
+		void	attack(std::string const &target);
 
-	ScavTrap &operator=(ScavTrap const &scav_trap);
+		ScavTrap &operator=(ScavTrap const &scav_trap);
 };
 
 #endif

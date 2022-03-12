@@ -1,10 +1,10 @@
-NAME			=	fragTrap
+NAME			=	scavTrap
 
 CC				=	c++
 CFLAGS			=	-Wall -Wextra -Werror
 CDEBUG			=	-fsanitize=adress -g -std=c++98
 
-SRC				=	main.cpp	ClapTrap.cpp	ScavTrap.cpp	FragTrap.cpp
+SRC				=	main.cpp	ClapTrap.cpp	ScavTrap.cpp
 
 OBJ				=	$(SRC:.cpp=.o)
 OBJ_DIR			=	./objs/
