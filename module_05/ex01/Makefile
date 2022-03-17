@@ -1,10 +1,10 @@
-NAME			=	clapTrap
+NAME			=	form
 
-CC				=	с++
-CFLAGS			=	-Wall -Wextra -Werror
-CDEBUG			=	-fsanitize=adress -g -std=c++98
+CXX				=	c++
+CPPFLAGS		=	-Wall -Wextra -Werror -std=c++98
+CDEBUG			=	-fsanitize=adress -g
 
-SRC				=	main.cpp	ClapTrap.cpp
+SRC				=	main.cpp		Bureaucrat.cpp		Form.cpp
 
 OBJ				=	$(SRC:.cpp=.o)
 OBJ_DIR			=	./objs/
@@ -13,11 +13,11 @@ OBJS			=	$(addprefix $(OBJ_DIR), $(OBJ))
 all				:	$(NAME)
 
 $(NAME)			:	$(OBJS)
-					$(CC) $(CFLAGS) -o $@ $^
+					$(CXX) $(CPPFLAGS) -o $@ $^
 
 $(OBJ_DIR)%.o	:	%.cpp
 					@mkdir -p $(OBJ_DIR)
-					$(CC) $(CFLAGS) -c $< -o $@
+					$(CXX) $(CPPFLAGS) -c $< -o $@
 
 .PHONY			:	all fclean clean re
 
