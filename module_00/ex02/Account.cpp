@@ -17,14 +17,14 @@ Account::Account(int initial_deposit)
 	_nbAccounts++;
 	_totalAmount += _amount;
 	_displayTimestamp();
-	std::cout << "index:" << _accountIndex <<  ";amount:" << _amount << ";created" << std::endl;
+	std::cout << "index:" << _accountIndex <<  ";amount:" << _amount << ";created" << '\n';
 }
 
 Account::Account(){};
 Account::~Account()
 {
 	_displayTimestamp();
-	std::cout << "index:" << _accountIndex <<  ";amount:" << _amount << ";closed" << std::endl;
+	std::cout << "index:" << _accountIndex <<  ";amount:" << _amount << ";closed" << '\n';
 }
 
 int Account::getNbAccounts(void)
@@ -71,14 +71,14 @@ void Account::displayAccountsInfos(void)
 {
 	_displayTimestamp();
 	std::cout << "account:" << _nbAccounts <<  ";total:" << _totalAmount
-				<< ";deposit:" << _totalNbDeposits << ";withdrawals:" << _totalNbWithdrawals <<  std::endl;	
+				<< ";deposit:" << _totalNbDeposits << ";withdrawals:" << _totalNbWithdrawals <<  '\n';	
 }
 
 void	Account::displayStatus(void) const
 {
 	_displayTimestamp();
 	std::cout << "index:" << _accountIndex << ";p_amount:" << _amount << ";deposit:" << _nbDeposits
-				<< ";withdrawals:" << _nbWithdrawals << std::endl;
+				<< ";withdrawals:" << _nbWithdrawals << '\n';
 }
 
 void	Account::makeDeposit(int deposit)
@@ -92,7 +92,7 @@ void	Account::makeDeposit(int deposit)
 	_totalAmount += deposit;
 	_displayTimestamp();
 	std::cout << "index:" << _accountIndex << ";p_amount:" << p_amount << ";deposit:" << deposit
-				<< ";amount:" << _amount << ";nb_deposit:" << _nbWithdrawals << std::endl;
+				<< ";amount:" << _amount << ";nb_deposit:" << _nbWithdrawals << '\n';
 }
 
 bool Account::makeWithdrawal(int withdrawal)
@@ -104,13 +104,13 @@ bool Account::makeWithdrawal(int withdrawal)
 	std::cout << "index" << _accountIndex << ";p_amount:" << p_amount;
 	if (p_amount < withdrawal)
 	{
-		std::cout << ";withdrawal:refused" << std::endl;
+		std::cout << ";withdrawal:refused" << '\n';
 		return (false);
 	}
 	_amount = _amount - withdrawal;
 	_nbWithdrawals++;
 	_totalNbWithdrawals++;
 	_totalAmount = _totalAmount - withdrawal;
-	std::cout << ";withdrawal:" << withdrawal << ";amount:" << _amount << ";nb_withdrawal:" << _nbWithdrawals << std::endl;
+	std::cout << ";withdrawal:" << withdrawal << ";amount:" << _amount << ";nb_withdrawal:" << _nbWithdrawals << '\n';
 	return (true);
 }

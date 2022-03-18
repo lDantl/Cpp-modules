@@ -24,7 +24,7 @@ int	main(void)
 		else if (input == "SEARCH")
 			guide.search();
 		else
-			std::cout << "No valid command!" << std::endl;
+			std::cout << "No valid command!" << '\n';
 	}
 	return 0;
 }

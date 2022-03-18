@@ -3,12 +3,12 @@
 PhoneBook::PhoneBook()
 {
 	size = 0;
-	std::cout << "Hello!" << std::endl;
+	std::cout << "Hello!" << '\n';
 }
 
 PhoneBook::~PhoneBook()
 {
-	std::cout << "Bye!" << std::endl;
+	std::cout << "Bye!" << '\n';
 }
 
 std::string PhoneBook::my_cin()
@@ -54,7 +54,7 @@ void PhoneBook::search()
 
 	if (size == 0)
 	{
-		std::cout << "There's no Contact to Search.." << std::endl;
+		std::cout << "There's no Contact to Search.." << '\n';
 		return ;
 	}
 	for (int i = 0; i < size; i++)
@@ -63,7 +63,7 @@ void PhoneBook::search()
 		<< std::setw(10) << ft_dot(contact[i].get_f_name()) << "|"
 		<< std::setw(10) << ft_dot(contact[i].get_l_name()) << "|"
 		<< std::setw(10) << ft_dot(contact[i].get_n_name()) << "|"
-		<< std::endl;
+		<< '\n';
 	}
 	while (true)
 	{
@@ -73,15 +73,15 @@ void PhoneBook::search()
 		ss_int >> index;
 		if (index < 1 || index > size)
 		{
-			std::cout << "Cannot find this Index..Please try again!" << std::endl;
+			std::cout << "Cannot find this Index..Please try again!" << '\n';
 			continue ;
 		}
-		std::cout << "No. " << index-- << std::endl;
-		std::cout << "1. First Name: " << contact[index].get_f_name() << std::endl;
-		std::cout << "2. Last Name: " << contact[index].get_l_name() << std::endl;
-		std::cout << "3. Nickname: " << contact[index].get_n_name() << std::endl;
-		std::cout << "4. Phone Number: " << contact[index].get_p_number() << std::endl;
-		std::cout << "5. Darkest Secret: " << contact[index].get_d_secret() << std::endl;
+		std::cout << "No. " << index-- << '\n';
+		std::cout << "1. First Name: " << contact[index].get_f_name() << '\n';
+		std::cout << "2. Last Name: " << contact[index].get_l_name() << '\n';
+		std::cout << "3. Nickname: " << contact[index].get_n_name() << '\n';
+		std::cout << "4. Phone Number: " << contact[index].get_p_number() << '\n';
+		std::cout << "5. Darkest Secret: " << contact[index].get_d_secret() << '\n';
 		break ;
 	}
 }

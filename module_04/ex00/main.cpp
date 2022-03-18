@@ -14,16 +14,16 @@ int main()
     const WrongAnimal* w_i = new WrongCat();
 
 
-    std::cout << j->getType() << " " << std::endl;
-    std::cout << i->getType() << " " << std::endl;
-    std::cout << k->getType() << " " << std::endl;
+    std::cout << j->getType() << " " << '\n';
+    std::cout << i->getType() << " " << '\n';
+    std::cout << k->getType() << " " << '\n';
     i->makeSound();   //will output the cat sound!
     j->makeSound();
     meta->makeSound();
     k->makeSound();
 
-    std::cout << w_i->getType() << " " << std::endl;
-    std::cout << w_meta->getType() << " " << std::endl;
+    std::cout << w_i->getType() << " " << '\n';
+    std::cout << w_meta->getType() << " " << '\n';
     w_i->makeSound(); //will NOT output the cat sound!
     w_meta->makeSound();
 

@@ -11,12 +11,12 @@ int main()
     Cat				*Inox = new Cat();
     Cat				Tom;
     
-    std::cout << Inox->getType() << " " << std::endl;
+    std::cout << Inox->getType() << " " << '\n';
     Inox->makeSound();
-    std::cout << "Inox :" << std::endl;
+    std::cout << "Inox :" << '\n';
     Inox->print_ideas();
     Tom = *Inox;
-    std::cout << "Tom :" << std::endl;
+    std::cout << "Tom :" << '\n';
     Tom.print_ideas();
     
     delete j;
