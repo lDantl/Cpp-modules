@@ -4,7 +4,7 @@
 # include <iostream>
 # include <string>
 # include <fstream>
-# include "Bureaucrat.hpp"
+#include "Bureaucrat.hpp"
 
 class Bureaucrat;
 
@@ -34,13 +34,12 @@ class Form
         int getGradeToSign() const;
         int getGradeToExecute() const;
 
+        
+
+        virtual bool execute(Bureaucrat const &executor) const = 0;
 
 
         bool    beSigned(Bureaucrat const &clerk);
-
-
-
-        virtual bool    execute(Bureaucrat const &executor) const = 0;
 
 
 
