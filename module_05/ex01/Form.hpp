@@ -21,7 +21,7 @@ class Form
     public:
         Form(std::string name, int grade_to_sign, int grade_to_execute);
         Form(Form const &src);
-        virtual ~Form() = 0;
+        virtual ~Form();
 
 
 
@@ -38,9 +38,6 @@ class Form
 
         bool    beSigned(Bureaucrat const &clerk);
 
-
-
-        virtual bool    execute(Bureaucrat const &executor) const = 0;
 
 
 
