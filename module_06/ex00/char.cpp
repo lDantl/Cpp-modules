@@ -1,6 +1,4 @@
-#include <iostream>
-#include <cmath>
-#include <cctype>
+#include "convert.hpp"
 
 void    print_char(char const &c)
 {

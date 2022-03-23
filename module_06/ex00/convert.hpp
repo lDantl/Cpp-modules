@@ -5,6 +5,8 @@
 # include <string>
 # include <iostream>
 # include <cctype>
+#include <iomanip>
+#include <cmath>
 
 void	print_double(double const& d, int const& precision);
 void	print_double(char const& c, int const& precision);
